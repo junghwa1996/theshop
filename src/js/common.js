@@ -25,23 +25,14 @@ $(document).ready(function(){
         ];
 
     var popScrollTop = 0;
-
     $('.slider01, .slider03').slick({
 		fade: false,
 		speed: 800,
-        dots: true,
+		dots: true,
 		draggable: true,
 		touchMove: true,
 		pauseOnHover: true,
-        variableWidth: true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
+        autoplay: true,
     });
 
     // 평면도
@@ -100,6 +91,13 @@ $(document).ready(function(){
 				}
 			}
 		]
+    });
+
+    $('.slider06').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        fade: true,
     });
 
     $('.slider').slick('setPosition');
