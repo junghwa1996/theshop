@@ -299,14 +299,16 @@ body.scroll-lock {
 }
 .iframe-box {
 	position:relative;
-	width:100%;
+	width:94.4444vw;
 	height:69.4444vw;
-    margin-top: -20.8333vw;
+	margin-top: -20.8333vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 .iframe-box>img {
 	position:absolute;
 	top:0;
-    left: 0;
+	left: 0;
 	width:100%;
 	height:100%;
 }
@@ -680,7 +682,8 @@ body.scroll-lock {
 	line-height: 1.5;
 }
 .section.kv .iframe-box{
-    height: 177.7778vw;
+	width: 100%;
+	height: 177.7778vw;
 }
 /* --------------------	emblem-------------------- */
 .section.emblem {
@@ -688,8 +691,6 @@ body.scroll-lock {
 }
 .section.emblem .iframe-box {
     margin-bottom: 22.2222vw;
-    padding-left: 2.7778vw;
-    padding-right: 2.7778vw;
 }
 .section.emblem .iframe-box:after{
     content: '';
@@ -895,6 +896,10 @@ body.scroll-lock {
 	color: #898989;
 }
 /* --------------------	interview-------------------- */
+.section.interview{
+	padding-bottom: 13.8889vw;
+	background-color: #d9e3ed;
+}
 .section.interview .title-box .marker+.icon-new {
 	display:inline-block;
 	width:10.4167vw;
@@ -902,8 +907,7 @@ body.scroll-lock {
 	vertical-align: top;
 }
 .section.interview .iframe-box{
-    padding-bottom: 13.8889vw;
-    background-color: #d9e3ed;
+    padding-bottom: 0;
 }
 /* --------------------	qna-------------------- */
 .section.qna{
@@ -1864,9 +1868,11 @@ footer .img-box {
 		margin-bottom:0;
 	}
 	.iframe-box {
-		width:100%;
+		width:680px;
 		height:500px;
-        margin-top: -150px;
+		margin-top: -150px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.iframe-box>img {
 		top:0;
@@ -2008,8 +2014,6 @@ footer .img-box {
 	.section.emblem .iframe-box {
         margin-bottom: 160px;
         position: relative;
-        padding-left: 20px;
-        padding-right: 20px;
 	}
     .section.emblem .iframe-box:after{
         bottom: -200px;
@@ -2176,13 +2180,17 @@ footer .img-box {
 		color: #898989;
 	}
 	/* -------------------- interview -------------------- */
+	.section.interview{
+		padding-bottom: 100px;
+		background-color: #d9e3ed;
+	}
 	.section.interview .title-box .marker+.icon-new {
 		width:75px;
 		margin-left: 20px;
 	}
-    .section.interview .iframe-box{
-        padding-bottom: 100px;
-    }
+	.section.interview .iframe-box{
+			padding-bottom: 0;
+	}
     /* --------------------	qna-------------------- */
     .section.qna ul{
         padding-bottom: 100px;

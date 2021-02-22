@@ -25,6 +25,16 @@ $(document).ready(function(){
         ];
 
     var popScrollTop = 0;
+    function setPlayerKv($this) {
+        $("#video01").addClass("show");        
+        $this.attr("src",'https://apis.zigbang.com/v2/vimeo/497912343?autoplay=1&loop=1&background=1');
+
+        $('#video01').on('load', function(){
+            setTimeout(function() {
+                $(".kv-image").addClass("hide");
+            }, 700);
+        });
+    }
     $('.slider01, .slider03').slick({
 		fade: false,
 		speed: 800,
@@ -383,8 +393,6 @@ $(document).ready(function(){
 		fbq('track', 'ec_submit_ramianelinity');
     });
 
-    setPlayer($('#video01'));
-
     $('.iframe-box').on('click', '.btn-sound', function() {
         var $this = $(this);
         var idx = $this.data('idx');
@@ -394,6 +402,8 @@ $(document).ready(function(){
         $this.data('muted', !muted);
         $this.toggleClass('on');
     });
+    
+    setPlayerKv($("#video01"));
 
     function setPlayer($this) {
         if ($this.attr('id')) {
