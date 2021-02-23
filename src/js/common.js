@@ -1,3 +1,24 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'AW-822803807');
+gtag('config', 'UA-173917921-12');
+
+function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-822803807/Kx3_COaMk-8BEN_6q4gD',
+        'transaction_id': '',
+        'event_callback': callback
+    });
+    return false;
+}
+
 $(document).ready(function(){
 
     !function(f,b,e,v,n,t,s)
@@ -10,7 +31,7 @@ $(document).ready(function(){
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '768145149939813');
     fbq('track', 'PageView');
-    fbq('track', 'ec_pageview_raemianelinity');
+    fbq('track', 'ec_pageview_yphalla');
 
     var _windowHeight = $(window).outerHeight();
 

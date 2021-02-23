@@ -16,6 +16,7 @@ if (isIOS) {
 let business = "";
 let mkt = "";
 let adId = "";
+let user_no = "";
 
 let windowNavigator = global.navigator;
 let userPlatform = "www";
@@ -36,8 +37,8 @@ try {
 	}
 } catch(e) {}
 
-//const apiEndPoint = "https://apis.zigbang.net/v2/campaign/pre_consulting"; //dev
-const apiEndPoint = "https://apis.zigbang.com/v2/campaign/pre_consulting"; //real
+const apiEndPoint = "https://apis.zigbang.com/v2/campaign/pre_consulting"; //dev
+//const apiEndPoint = "https://apis.zigbang.com/v2/campaign/pre_consulting"; //real
 // const apiEndPoint = "https://apis-preview.zigbang.net/v2/campaign/pre_consulting"; //preview
 
 class Register extends React.Component {
@@ -99,6 +100,10 @@ class Register extends React.Component {
 		adId=params.adId || params.adid;
     }
 
+    if(params.user_no){
+        user_no=params.user_no;
+     }
+
     business=domain_platform+"_"+bizPlatform;
     mkt=mkt_source;
 	
@@ -112,12 +117,13 @@ class Register extends React.Component {
 
 	// 페이지 진입 시 핀포인트 호출
     sendEvent(ZB_EVENT_TYPE.ZB_SCREEN_VIEW, {
-	  adId: adId,
-      screen_name: "분양카달로그",
-      ad_name: "래미안엘리니티",
-	  platform: userPlatform,
-      business: business,
-	  mkt:mkt
+        user_no: user_no,
+        adId: adId,
+        screen_name: "분양카달로그",
+        ad_name: "더샵거제디클리브",
+        platform: userPlatform,
+        business: business,
+        mkt:mkt
 	});
 
 	if(adId) {
@@ -182,476 +188,292 @@ class Register extends React.Component {
                     <div className="gnb-open">
                         <button className="btn-gnb-close"><i></i></button>
                         <ul>
-                            <li><a href="javascript:;">Home</a></li>
-                            <li><a href="javascript:;">Emblem</a></li>
-                            <li><a href="javascript:;">Price</a></li>
-                            <li><a href="javascript:;">Interview</a></li>
-                            <li><a href="javascript:;">Unit - 59㎡A</a></li>
-                            <li><a href="javascript:;">Unit - 74㎡B</a></li>
-                            <li><a href="javascript:;">Unit - 84㎡C</a></li>
-                            <li><a href="javascript:;">Unit - Other UNIT</a></li>
-                            <li><a href="javascript:;">VR Home Tour</a></li>
-                            <li><a href="javascript:;">Unit Plan</a></li>
-                            <li><a href="javascript:;">Location & Layout</a></li>
-                            <li><a href="javascript:;">Gallery</a></li>
-                            <li><a href="javascript:;">Location</a></li>
-                            <li><a href="javascript:;">Calendar</a></li>
-                            <li><a href="javascript:;">Event</a></li>
+                            <li><a href="javascript:;">HOME</a></li>
+                            <li><a href="javascript:;">RENEWAL 3.0</a></li>
+                            <li><a href="javascript:;">THE SHARP LIFE</a></li>
+                            <li><a href="javascript:;">LOCATION</a></li>
+                            <li><a href="javascript:;">GALLERY</a></li>
+                            <li><a href="javascript:;">INTERVIEW</a></li>
+                            <li><a href="javascript:;">TALK TALK</a></li>
+                            <li><a href="javascript:;">MODEL HOUSE</a></li>
+                            <li><a href="javascript:;">EVENT</a></li>
+                            <li><a href="javascript:;">SUMMARY</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="container">
                     <div className="section kv">
-                        <div className="img-box"><img src="../static/img/kv_2nd.jpg" alt="좋은 집안을 만나다"/></div>
-                    </div>
-
-                    <div className="section emblem">
                         <div className="iframe-box">
-                            <img src="../static/img/video_thumb_01.jpg"/>
-                            <iframe id="video01" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/416621786?dnt=1&muted=1" data-idx="0"></iframe>
+                            <img src="../static/img/kv_2nd.jpg"/>
+                            <iframe id="video01" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514157521?dnt=1&muted=1" data-idx="0"></iframe>
                             <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
                         </div>
                     </div>
 
-                    <div className="section price">
-                        <div className="title-box">
-                            <div className="marker txt-en">Price</div>
-                            <h2>6월 11일, 입주자모집공고 공개!</h2>
-                        </div>
-                        <div className="price-box">
-                            <div className="table-box">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>전용(㎡)</th>
-                                            <th>분양세대</th>
-                                            <th>분양가(만원)</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>51A</td>
-                                            <td>52</td>
-                                            <td>59,100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>51B</td>
-                                            <td>12</td>
-                                            <td>57,800</td>
-                                        </tr>
-                                        <tr>
-                                            <td>59A</td>
-                                            <td>63</td>
-                                            <td>69,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>59B</td>
-                                            <td>10</td>
-                                            <td>69,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>74A</td>
-                                            <td>16</td>
-                                            <td>81,400</td>
-                                        </tr>
-                                        <tr>
-                                            <td>74B</td>
-                                            <td>70</td>
-                                            <td>79,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>84A</td>
-                                            <td>67</td>
-                                            <td>91,900</td>
-                                        </tr>
-                                        <tr>
-                                            <td>84B</td>
-                                            <td>87</td>
-                                            <td>90,900</td>
-                                        </tr>
-                                        <tr>
-                                            <td>84C</td>
-                                            <td>55</td>
-                                            <td>90,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>84D</td>
-                                            <td>34</td>
-                                            <td>90,900</td>
-                                        </tr>
-                                        <tr>
-                                            <td>89</td>
-                                            <td>5</td>
-                                            <td>96,850</td>
-                                        </tr>
-                                        <tr>
-                                            <td>101A</td>
-                                            <td>1</td>
-                                            <td>125,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>101B</td>
-                                            <td>1</td>
-                                            <td>125,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>109</td>
-                                            <td>1</td>
-                                            <td>108,680</td>
-                                        </tr>
-                                        <tr>
-                                            <td>121</td>
-                                            <td>1</td>
-                                            <td>119,470</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <div className="section emblem">
+                        <div className="title-box bg-type1">
+                            <div className="marker txt-en type1">RENEWAL 3.0</div>
+                            <h2>
+                                경남에서 첫 만남<br/>
+                                <span>리뉴얼된 더샵</span>
+                            </h2>
+                            <div className="logo">
+                                <img src="../static/img/logo.png" alt=""/>
                             </div>
-                            <a href="../static/catalogue.pdf" target="_blank">입주자모집공고 보러가기</a>
-                            <p>
-                                &#8251; 상기 분양가격은 타입 별 최저 분양가이며<br/>
-                                발코니 확장과 추가 선택품목이 포함되지 않은 가격입니다.<br/>
-                                세부내용은 입주자 모집공고를 확인해 주세요.
+                            <p>더샵이 2021년 새로운 모습으로 거제에<br/>
+                                찾아옵니다. 더샵의 차별화된 익스테리어,<br/>
+                                단지의 상징이자 자랑이 될<br/>
+                                랜드마크 게이트, 세계적인 디자인 거장<br/>
+                                알레산드로 멘디니와 개발한 패턴까지<br/>
+                                <br/>
+                                주거의 本이 될 더샵의<br/>
+                                리뉴얼 3.0을 거제에서 만나보세요.
                             </p>
                         </div>
-                    </div>
-
-                    <div className="section interview">
-                        <div className="title-box">
-                            <div className="marker txt-en">Interview</div>
-                            <span className="icon-new"><img src="../static/img/icon_new.png" alt="New"/></span>
-
-                            <h2>왜, 래미안 엘리니티일까</h2>
-                            <p>
-                                <span><i>#</i> 청약에서계약까지</span>
-                                <span><i>#</i> 이유있는선택</span>
-                                <span><i>#</i> 기대감</span>
-                            </p>
-                        </div>
-                            
                         <div className="iframe-box">
-                            <img src="../static/img/video_thumb_07_v1.jpg" alt=""/>
-                            <iframe id="video02" src="" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/430294886?dnt=1&muted=1" data-idx="1"></iframe>
-                            <button type="button" className="btn-sound" data-idx="1" data-muted="true"></button>
+                            <img src="../static/img/video_thumb_01.jpg"/>
+                            <iframe id="video02" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514160123?dnt=1&muted=1" data-idx="1"></iframe>
+                            <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
                         </div>
                     </div>
 
-                    <div className="section unit">
-                        <div className="title-box">
-                            <div className="marker txt-en">Unit</div>
-                            <h2>59㎡A</h2>
+                    <div className="section life">
+                        <div className="title-box bg-type2">
+                            <div className="marker txt-en type2">THE SHARP LIFE</div>
+                            <h2>
+                                거제에서 만나는<br/>
+                                <span>'더샵다움'</span>
+                            </h2>
                             <p>
-                                <span><i>#</i> 3BAY_판상형</span>
-                                <span><i>#</i> 맞통풍</span>
-                                <span><i>#</i> 침실3개, 욕실2개</span>
+                                집이 가져야할 본질적 가치, 그리고 그 안에<br/>
+                                담길 라이프스타일을 함께 고민하는<br/>
+                                포스코건설 더샵 아파트.<br/>
+                                <br/>
+                                ‘더샵다움’이란 이런 것입니다.<br/>
                             </p>
                         </div>
-                            
-                        <div className="iframe-box">
-                            <img src="../static/img/video_thumb_02_v1.jpg" alt=""/>
-                            <iframe id="video03" src="" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/426099305?dnt=1&muted=1" data-idx="2"></iframe>
-                            <button type="button" className="btn-sound" data-idx="2" data-muted="true"></button>
-                        </div>
-                    </div>
-
-                    <div className="section unit">
-                        <div className="title-box">
-                            <div className="marker txt-en">Unit</div>
-                            <h2>74㎡B</h2>
-                            <p>
-                                <span><i>#</i> 이면개방형</span>
-                                <span><i>#</i> 스마트사이징</span>
-                                <span><i>#</i> 침실3개, 욕실2개</span>
-                            </p>
-                        </div>
-                            
-                        <div className="iframe-box">
-                            <img src="../static/img/video_thumb_03_v1.jpg" alt=""/>
-                            <iframe id="video04" src="" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/426099226?dnt=1&muted=1" data-idx="3"></iframe>
-                            <button type="button" className="btn-sound" data-idx="3" data-muted="true"></button>
-                        </div>
-                    </div>
-
-                    <div className="section unit">
-                        <div className="title-box">
-                            <div className="marker txt-en">Unit</div>
-                            <h2>84㎡C</h2>
-                            <p>
-                                <span><i>#</i> 이면개방형</span>
-                                <span><i>#</i> 코너부 전용면적 확장</span>
-                                <span><i>#</i> 침실3개, 욕실2개</span>
-                            </p>
-                        </div>
-                            
-                        <div className="iframe-box">
-                            <img src="../static/img/video_thumb_04_v1.jpg" alt=""/>
-                            <iframe id="video05" src="" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/425864541?dnt=1&muted=1" data-idx="4"></iframe>
-                            <button type="button" className="btn-sound" data-idx="4" data-muted="true"></button>
-                        </div>
-                    </div>
-
-                    <div className="section unit">
-                        <div className="title-box">
-                            <div className="marker txt-en">Unit</div>
-                            <h2>Other UNIT</h2>
-                            <p>
-                                <span><i>#</i> 미건립유닛</span>
-                                <span><i>#</i> 12개 타입</span>
-                            </p>
-                        </div>
-                            
-                        <div className="iframe-box">
-                            <img src="../static/img/video_thumb_05_v1.jpg" alt=""/>
-                            <iframe id="video06" src="" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/427538662?dnt=1&muted=1" data-idx="5"></iframe>
-                            <button type="button" className="btn-sound" data-idx="5" data-muted="true"></button>
-                        </div>
-                    </div>
-
-                    <div className="section vr">
-                        <div className="title-box">
-                            <div className="marker txt-en">VR Home Tour</div>
-                            <h2>VR로 확인하는 세대 내부</h2>
-                            <p>
-                                <span><i>#</i> 실속있는공간</span>
-                                <span><i>#</i> 숨은정보찾기</span>
-                            </p>
-                        </div>
-                            
-                        <div className="vr-wrap">
-                            <div className="slider slider01">
+                        <div className="img-slider">
+                            <div className="slider slider06">
                                 <div className="slide-content">
                                     <div className="img-box">
-                                        <img src="../static/img/slider01_01_2nd.png" alt=""/>
-                                        <a href="javascript:;" className="btn-show-vr" data-src="https://m.zigbang.com/app/html/vr.html?id=d9jxzaYm&amp;noBtns=1&amp;onlyVR=1"></a>
+                                        <img src="../static/img/life-img1.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="slide-content">
                                     <div className="img-box">
-                                        <img src="../static/img/slider01_02_2nd.png" alt=""/>
-                                        <a href="javascript:;" className="btn-show-vr" data-src="https://m.zigbang.com/app/html/vr.html?id=NKTLgsTO&amp;noBtns=1&amp;onlyVR=1"></a>
+                                        <img src="../static/img/life-img2.jpg" alt=""/>
                                     </div>
                                 </div>
                                 <div className="slide-content">
                                     <div className="img-box">
-                                        <img src="../static/img/slider01_03_2nd.png" alt=""/>
-                                        <a href="javascript:;" className="btn-show-vr" data-src="https://m.zigbang.com/app/html/vr.html?id=nLlH62hy&amp;noBtns=1&amp;onlyVR=1"></a>
+                                        <img src="../static/img/life-img3.jpg" alt=""/>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div className="section plan">
-                        <div className="title-box">
-                            <div className="marker txt-en">Unit Plan</div>
-                            <h2>선택의 폭이 넓어진 공간</h2>
-                        </div>
-                            
-                        <div className="slider-wrap">
-                            <a href="javascript:;" className="btn-popup btn-expand btn-plan"></a>
-
-                            <div className="slider slider02">
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_01_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_02_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_03_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_04_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_05_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_06_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_07_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_08_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_09_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_10_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_11_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_12_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_13_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_14_2nd.jpg" alt=""/></div>
-                                </div>
-                                <div className="slide-content">
-                                    <div className="img-box"><img src="../static/img/slider02_15_2nd.jpg" alt=""/></div>
-                                </div>
+                            <div className="sub-text">
+                                <h3>The 고급스러운 외관</h3>
+                                <p>알레산드로 멘디니의 독창적인 패턴 디자인</p>
                             </div>
                         </div>
-
-                        <div className="btn-wrap">
-                            <a href="#" className="on">51A</a>
-                            <a href="#">51B</a>
-                            <a href="#">59A</a>
-                            <a href="#">59B</a>
-                            <a href="#">74A</a>
-                            <a href="#">74B</a>
-                            <a href="#">84A</a>
-                            <a href="#">84B</a>
-                            <a href="#">84C</a>
-                            <a href="#">84D</a>
-                            <a href="#">89</a>
-                            <a href="#">109</a>
-                            <a href="#">121</a>
-                            <a href="#">101A</a>
-                            <a href="#">101B</a>
+                        <div className="img-slider right">
+                            <div className="slider slider06">
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/life-img4.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="sub-text">
+                                <h3>The 똑똑한 시스템</h3>
+                                <p>아파트 내외부 시스템을 제어할 수 있는 스마트 월</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div className="section layout">
-                        <div className="title-box">
-                            <div className="marker txt-en">Location & Layout</div>
-                            <h2>한눈에 확인하는 입지와 단지 배치</h2>
-                            <p>
-                                <span><i>#</i> 래미안라이프</span>
-                                <span><i>#</i> 클럽래미안</span>
-                                <span><i>#</i> 포레스토리</span>
-                            </p>
-                        </div>
-                            
-                        <div className="iframe-box">
-                            <img src="../static/img/video_thumb_06_v1.jpg" alt=""/>
-                            <iframe id="video07" src="" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/427552562?dnt=1&muted=1" data-idx="6"></iframe><button type="button" className="btn-sound" data-idx="6" data-muted="true"></button>
-                        </div>
-                    </div>
-                    
-                    <div className="section gallery">
-                        <div className="title-box">
-                            <div className="marker txt-en">Gallery</div>
-                            <h2>먼저 확인해보는 시간</h2>
-                            <p>
-                                <span><i>#</i> Community</span>
-                            </p>
-                        </div>
-                            
-                        <div className="img-box">
-                            <a href="javascript:;" className="btn-popup btn-expand btn-gallery"></a>
-                            <img src="../static/img/gallery.jpg" alt=""/>
+                        <div className="img-slider">
+                            <div className="slider slider06">
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/life-img5.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/life-img6.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/life-img7.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="sub-text">
+                                <h3>The 쾌적한 단지 내부</h3>
+                                <p>사계절 내내 맑은공기 가득한 자연친화적 단지</p>
+                            </div>
                         </div>
                     </div>
 
                     <div className="section location">
-                        <div className="title-box">
-                            <div className="marker txt-en">Location</div>
-                            <h2>당신은 어디에 살고 싶은가요</h2>
+                        <div className="title-box bg-type1">
+                            <div className="marker txt-en type1">LOCATION</div>
+                            <h2>
+                                새로운 주거타운<br/>
+                                <span>랜선 거제 탐방기</span>
+                            </h2>
                             <p>
-                                <span><i>#</i> Traffic</span>
+                                거제의 중심에 위치한 더샵 거제디클리브.<br/>
+                                주변에 편의 시설과 자연 및 교육 환경을 고루<br/>
+                                갖추고 새로운 주거 중심지로 발돋움합니다.<br/>
+                                거제 상동지구 내 최선호도 지역이자<br/>
+                                교통까지 편리한 거제의 중심으로 GO GO!
                             </p>
                         </div>
-                            
-                        <div className="slider slider03">
-                            <div className="slide-content">
-                                <div className="img-box"><img src="../static/img/slider03_01_2nd.jpg" alt=""/></div>
-                        
-                                <div className="content-box">
-                                    <p>지하철역과 내부순환로 1km이내,</p>
-                                    <p>추가 개발로 가까워지는 교통</p>
-                                </div>
-                            </div>
+                        <div className="iframe-box">
+                            <img src="../static/img/video_thumb_02.jpg"/>
+                            <iframe id="video03" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514162764?dnt=1&muted=1" data-idx="2"></iframe>
+                            <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
+                        </div>
+                    </div>
 
-                            <div className="slide-content">
-                                <div className="img-box"><img src="../static/img/slider03_02_2nd.jpg" alt=""/></div>
-                        
-                                <div className="content-box">
-                                    <p>종암초, 대광초·중·고, 고려대</p>
-                                    <p>신설동 학원가 등 가까운 교육</p>
+                    <div className="section gallery">
+                        <div className="title-box bg-type2">
+                            <div className="marker txt-en type2">GALLERY</div>
+                        </div>
+                        <div className="img-slider">
+                            <div className="slider slider01">
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/gallery01.jpg" alt=""/>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className="slide-content">
-                                <div className="img-box"><img src="../static/img/slider03_03_2nd.jpg" alt=""/></div>
-                        
-                                <div className="content-box">
-                                    <p>롯데백화점, 이마트, 경동시장,</p>
-                                    <p>고대병원 등 곁으로 온 생활</p>
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/gallery02.jpg" alt=""/>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className="slide-content">
-                                <div className="img-box"><img src="../static/img/slider03_04_2nd.jpg" alt=""/></div>
-                        
-                                <div className="content-box">
-                                    <p>성북천, 청계천, 숭인근린공원,</p>
-                                    <p>선농단역사공원 등 인접한 자연</p>
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/gallery03.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div className="slide-content">
+                                    <div className="img-box">
+                                        <img src="../static/img/gallery04.jpg" alt=""/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="section calendar">
-                        <div className="title-box">
-                            <div className="marker txt-en">Calendar</div>
-                            <h2>6월 23일은 1순위 청약</h2>
+                    <div className="section interview">
+                        <div className="title-box bg-type1">
+                            <div className="marker txt-en type1">INTERVIEW</div>
+                            <h2>
+                                전문가가 말하는 3.0 더샵<br/>
+                                <span>비하인드 스토리</span>
+                            </h2>
                             <p>
-                                <span><i>#</i> Notice</span>
+                                본격 리뉴얼을 통해 업그레이드된<br/>
+                                시스템과 디자인, 더샵 거제디클리브에<br/>
+                                적용된 스마트한 기술과 교통 및 개발 호재<br/>
+                                등 전문가가 말하는 리뉴얼된 더샵의 진짜<br/>
+                                비하인드 스토리를 들어보세요.
                             </p>
                         </div>
-                            
-                        <div className="img-box">
-                            <img src="../static/img/calendar_v1.jpg" alt=""/>
+                        <div className="iframe-box">
+                            <img src="../static/img/video_thumb_03.jpg"/>
+                            <iframe id="video04" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514166486?dnt=1&muted=1" data-idx="3"></iframe>
+                            <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
+                        </div>
+                    </div>
+
+                    <div className="section qna">
+                        <div className="title-box bg-type3">
+                            <div className="marker txt-en type3">TALK TALK</div>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Q.</p>
+                                <p>3.0 더샵에서 리뉴얼된 부분은 무엇인가요?</p>
+                            </li>
+                            <li>
+                                <p>A.</p>
+                                <p>안전한 주거 환경(Reliable Safety),<br/>
+                                    안락한 환경(Comfort), 한층 향상된<br/>
+                                    편의 (Enhanced Convenience),<br/>
+                                    세련된 디자인 (Refine Design)<br/>
+                                    이렇게 4가지를 꼽을 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <p>Q.</p>
+                                <p> 더샵 거제디클리브에 접목한 AiQ에 대해<br/>
+                                    소개해주세요.</p>
+                            </li>
+                            <li>
+                                <p>A.</p>
+                                <p>앱으로 조명, 난방, 환기 제어 및 주차<br/>
+                                    위치, 택배도착, 에너지 사용량 등<br/>
+                                    정보를 확인할 수 있습니다. 안면인식<br/>
+                                    로비폰, 엘리베이터 살균조명, 공기측정<br/>
+                                    LED신호등은 기술을활용해 안전과<br/>
+                                    건강 까지 생각한 시스템이죠. </p>
+                            </li>
+                            <li>
+                                <p>Q.</p>
+                                <p>더샵 거제 디클리브는 어떤 아파트인가요?</p>
+                            </li>
+                            <li>
+                                <p>A.</p>
+                                <p>거제시 상동동에 들어서는 대단지<br/>
+                                    아파트입니다. 단지 인근이 KTX 역사<br/>
+                                    후보지에 선정되면서 점점 뜨거운<br/>
+                                    감자가 되는 중입니다. </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="section contact">
+                        <div className="title-box ">
+                            <div className="marker txt-en type2">CONTACT</div>
+                            <h2>
+                                리뉴얼된 3.0 더샵을<br/>
+                                <span>만나는 가장 빠른 방법</span>
+                            </h2>
+                        </div>
+                        <div className="content">
+                            <div className="contact-img">
+                                <img src="../static/img/contact-img.jpg" alt=""/>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>사전홍보관</p>
+                                    <p>거제시 상동동 448-1, 상가1층</p>
+                                </li>
+                                <li>
+                                    <p>현장</p>
+                                    <p>경상남도 거제시 상동동 756번지</p>
+                                </li>
+                                <li className="inquiry">
+                                    <p>문의</p>
+                                    <p>1661-3007</p>
+                                    <p>74㎡ /84㎡ /98㎡</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     
                     <div className="section event">
-                        <div className="title-box event01 m-only">
-                            <div className="marker txt-en">Event</div>
-                            <h2 className="txt-en"></h2>
+                        <div className="title-box ">
+                            <div className="marker txt-en type4">EVENT</div>
                         </div>
-
-                        <div className="event01-box m-only">
-                            <img src="../static/img/event01_end_pc.jpg" alt="" className="pc-only"/>
-                            <img src="../static/img/event01_end_m.jpg" alt="" className="m-only"/>
+                        <div className="img-box">
+                            <img src="../static/img/event-bg.jpg" alt=""/>
                         </div>
-
-                        <div className="title-box event02">
-                            <div className="marker txt-en">Plus Event</div>
-                            <h2 className="txt-en">인터뷰 동영상을 보시고 문제를 맞춰주세요!</h2>
-                            <p>래미안 엘리니티는 <br/>예전에 어떻게 불려졌을까요?</p>
-                        </div>
-
                         <div className="form-box">
                             <form onSubmit={this.apiSubmit.bind(this)}>
-                                <div className="answer-box">
-                                    <span>용두</span>
-                                    <input type="tel" id="answer" className="txt-answer" maxLength="1"/>
-                                    <span>구역</span>
-                                </div>
-
-                                <p className="input-check">응모 핸드폰 번호</p>
                                 <input type="tel" id="phone" className="phone-input" placeholder="휴대폰 번호 입력 (- 제외)" maxLength="11"/>
-
-                                <div className="giftcard-box">
-                                    <dl>
-                                        <dt>응모 기간</dt>
-                                        <dd>2020.06.24(수) ~ 06.30(화)</dd>
-                                        <dt>이벤트 경품</dt>
-                                        <dd>해피기프트카드 3만원권 5명 추첨</dd>
-                                    </dl>
-
-                                    <div className="img-box"><img src="../static/img/giftcard.png" alt=""/></div>
-                                </div>
-                                
+                                <p className="input-check">※ 본인의 연락처로 작성해 주세요.</p>
                                 <ul className="agree-box">
                                     <li>
                                         <input type="checkbox" id="agree01" onClick={event => this.toggleCheckboxAll(event)}/>
@@ -664,15 +486,19 @@ class Register extends React.Component {
                                         <a href="javascript:;" className="btn-popup btn-terms terms01">약관보기</a>
                                     </li>
                                     <li>
-                                        <input type="checkbox" id="agree04" onClick={event => this.toggleCheckbox(event, "agreement3")}/>
+                                        <input type="checkbox" id="agree03" onClick={event => this.toggleCheckbox(event, "agreement2")}/>
+                                        <label htmlFor="agree03">개인정보의 제3자 제공 동의(필수)</label>
+                                        <a href="javascript:;" className="btn-popup btn-terms terms02">약관보기</a>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="agree04"onClick={event => this.toggleCheckbox(event, "agreement3")}/>
                                         <label htmlFor="agree04">부동산 정보 및 이벤트 혜택 수신(선택)</label>
                                         <a href="javascript:;" className="btn-popup btn-terms terms03">약관보기</a>
                                     </li>
                                 </ul>
-
                                 <div className="btn-wrap">
-                                    <button type="submit" className="btn-submit">INVITATION</button>
-                                    <a href="javascript:;" className="btn-popup btn-notice">이벤트 자세히 보기</a>
+                                    <button type="submit" className="btn-submit">분양 안내받기</button>
+                                    <a href="javascript:;" className="btn-popup btn-notice">이벤트 유의사항 보기</a>
                                 </div>
                             </form>
                         </div>
@@ -690,31 +516,27 @@ class Register extends React.Component {
                     <ul className="desc-list">
                         <li>
                             <strong>사업명</strong>
-                            <span>래미안 엘리니티</span>
+                            <span>더샵 거제디클리브</span>
                         </li>
                         <li>
                             <strong>위치</strong>
-                            <span>서울시 동대문구 용두동 753-9 번지 일원</span>
+                            <span>경상남도 거제시 상동동 765번지 외 114필지</span>
                         </li>
                         <li>
                             <strong>규모</strong>
-                            <span>지하 2층 ~ 지상 21층 / 아파트 16개동 <br/>및 부대 복리시설</span>
+                            <span>지하 3층, 지상 1 ~ 25층 / 13개동</span>
                         </li>
                         <li>
                             <strong>세대수</strong>
-                            <span>총 1,048세대 중 일반분양 475세대</span>
-                        </li>
-                        <li>
-                            <strong>시행</strong>
-                            <span>용두6구역 주택재개발정비사업조합</span>
+                            <span>총 1288세대</span>
                         </li>
                         <li>
                             <strong>시공</strong>
-                            <span>삼성물산</span>
+                            <span>(주)포스코건설</span>
                         </li>
                         <li>
                             <strong>문의</strong>
-                            <span><a href="tel:02-959-0477">02-959-0477</a></span>
+                            <span><a href="tel:1661-3007">1661-3007</a></span>
                         </li>
                     </ul>
 
@@ -728,6 +550,9 @@ class Register extends React.Component {
                     </ul>
 
                     <span className="copyright">Copyright &copy;2020 ZIGBANG All rights reserved.</span>
+                    <div className="logo">
+                        <img src="../static/img/logo.png" alt=""/>
+                    </div>
                 </footer>
 
                 <div className="term-check">필수 약관에 동의해 주세요.</div>
@@ -829,7 +654,7 @@ class Register extends React.Component {
                 </div>
 
                 <div className="vr-iframe-box rotate">
-                    <iframe src="" id="vr-iframe" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>
+                    <iframe src="" id="vr-iframe" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
                     <a href="javascript:;" className="btn-popup-close m-only"><span>레이어 팝업닫기</span></a>
                 </div>
                 
@@ -957,13 +782,14 @@ class Register extends React.Component {
 
     // 모두 동의 클릭시 핀포인트 호출
     sendEvent(ZB_EVENT_TYPE.ZB_SCREEN_CLICK, {
-	  adId: adId,
-      screen_name: "분양카달로그",
-      button_name: "모두동의",
-      ad_name: "래미안엘리니티",
-	  platform: userPlatform,
-      business: business,
-      mkt:mkt
+        user_no: user_no,
+        adId: adId,
+        screen_name: "분양카달로그",
+        button_name: "모두동의",
+        ad_name: "더샵거제디클리브",
+        platform: userPlatform,
+        business: business,
+        mkt:mkt
     });
 
 	if(isAgreementExtended){
@@ -991,202 +817,193 @@ class Register extends React.Component {
   }
 
 
- toggleCheckbox(event, target) {
-   // event.preventDefault();
-	 const {isAgreementExtended, agreement1, agreement2, agreement3 } = this.state;
-	if(target == 'agreement1'){
-		this.state.agreement1 = event.target.checked;
-		this.state.agreement2 = event.target.checked;
-	}
-	if(target == 'agreement3'){
-		this.state.agreement3 = event.target.checked;
-	}
-
-
-    if(this.state.agreement1 && this.state.agreement2 && this.state.agreement3){
-		this.state.isAgreementExtended = true;
-    } else {
-		this.state.isAgreementExtended = false;
-	}
-	$('#agree01').prop('checked', this.state.isAgreementExtended);
-  }
-
-  getParam() {
-    const params = this.model.genQueryParams(this.props.router.asPath);
-
-    var domain_platform = "";
-    var mkt_source = "";
-
-    var path = this.props.router.asPath;
-    if(path.indexOf("?")!=-1){
-      path = path.substring(0,path.indexOf("?"));
-    }
-    var arSplitUrl   = path.split("/");
-    var nArLength     = arSplitUrl.length;
-	var domain = this.props.router.query.domain;
-    this.state.domain = domain;
-
-    if(domain){
-      if(domain==="zigbang")domain_platform="zb";
-      if(domain==="daum")domain_platform="da";
-      if(domain==="hogangnono")domain_platform="hg";
-    }
-
-    if(params.mkt_source){
-      mkt_source=params.mkt_source;
-    }
-
-    business=domain+"_"+bizPlatform;
-    mkt=mkt_source;
-    this.setState({ business, mkt }, () => {
-      this.params = params;
-    });
-
-  }
-
-  submitValidation(phone, agreement1, agreement2) {
-
-	const regExp = /^01([0|1|6|7|8|9]{1})([0-9]{3,4})([0-9]{4})$/;
-
-    if (!phone) {
-	  //alert("연락처를 입력해주세요.");
-	  this.customAlert("연락처를 입력해주세요.");
-      return false;
-    }else{
-		if(!regExp.test(phone)) {
-
-		//alert("연락처가 잘못 입력되었습니다.\n다시 한 번 확인해주세요.");
-		this.customAlert("연락처가 잘못 입력되었습니다. 다시 한 번 확인해 주세요.");
-		return false;
-		}else{
-			if (!agreement1 || !agreement2) {
-				//alert("약관에 모두 동의해주세요.");
-				this.customAlert("필수 약관에 동의해 주세요.");
-				return false;
-			}else{
-				return true;
-			}
-		}
-	}
-  }
-
-  async apiSubmit(event) {
-    event.preventDefault();
-
-    const { domain, agreement1, agreement2, agreement3 } = this.state;
-    const $this = this;
-    
-    const answer = $('#answer').val();
-    if (answer !== '6') {
-		$this.customAlert("정답이 아니네요. 다시 입력해주세요.<br>힌트 : 3 + 3 = ?");
-        return;
-    }
-
-	var mkt_device = osName+"-"+browserName;
-	var marketing_media = "기타";
-	var marketing_source = "";
-
-    const params = this.model.genQueryParams(this.props.router.asPath);
-	if (params.mkt_source) {
-		marketing_source = params.mkt_source;
-	}
-
-    if(domain){
-      if(domain==="zigbang")marketing_media="직방";
-      if(domain==="daum")marketing_media="다음";
-      if(domain==="hogangnono")marketing_media="호갱노노";
-    }
-    
-	const phone = $('#phone').val();
-    const validation = this.submitValidation(phone, agreement1, agreement2);
-    const marketing_approvement = this.state.agreement3;
-    
-    if (!validation) return null;
-
-	$('body').append('<div class="overlay"></div>');
-	$("#loading").show();
-
-    console.log("apiSubmit(os) : "+osName); //Windows
-    console.log("apiSubmit(browser) : "+browserName); //firefox
-	console.log("apiSubmit(phone) : "+phone); //01012345678
-	console.log("apiSubmit(device) : "+mkt_device); //windows-firefox
-	console.log("apiSubmit(mkt_source) : "+marketing_source);
-	console.log("apiSubmit(media) : "+marketing_media);//직방
-	console.log("apiSubmit(adid) : "+adId); //adId
-	console.log("apiSubmit(mkt_approvement) : "+marketing_approvement); //marketing_approvement
-	console.log("apiSubmit(domain) : "+domain); //marketing_approvement
-
-	$('input').val('');
-	$('input[type="checkbox"]').prop('checked', false);
-	this.state.agreement1 = false;
-	this.state.agreement2 = false;
-    this.state.agreement3 = false;
-
-    fetch(apiEndPoint, {
-      method: "POST",
-      body: JSON.stringify({
-        campaign_id : 34, 
-        area_danji_id: 51813,
-        // campaign_id : 23, //(전달받은 분양광고 ID)
-        // area_danji_id: 36389, //(전달받은 단지 ID , 없을경우  0)
-        domain: domain, //(path 로 전달받은 domain , ex : ) zigbang, hogangnono, daum )
-        user_phone: phone, //(신청자 전화번호)
-        marketing_source: marketing_source || null, // (마케팅관련파라미터)
-        device_type: mkt_device, //(디바이스 타입)
-        marketing_approvement: marketing_approvement //(마케팅 수집 동의 여부)
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
-
-    }).then(function(response) {
-      response.status     //=> number 100–599
-      response.statusText //=> String
-      response.headers    //=> Headers
-      response.url        //=> String
-      return response.json().then(function(json) {
-        return json;
-      });
-    }).then(function(json) {
-        console.log(json.code);
-        console.log(json.name);
-        console.log(json.message);
-
-        if(json.code===undefined){
-		 /*json 결과 {} 즉, 이 조건을 타면 신청 된 것임*/
-
-        // 신청 완료시 핀포인트 호출 
-        sendEvent(ZB_EVENT_TYPE.APART_PURCHASE, {
-            adId: adId,
-            screen_name: "분양카달로그",
-            button_name: "응모하기",
-            ad_name: "래미안엘리니티",
-            platform: userPlatform,
-            business: business,
-            mkt: marketing_source
-        });
-          //alert("이벤트 참여가 완료되었습니다.");
-
-		  $("#loading").hide();
-		  if(screen.width >= 769) {
-			$(".layer-popup").css("top", $(document).scrollTop() + 55);
-		  } else {
-			$(".layer-popup").css("top", $(document).scrollTop());
-		  }
-		  $(".layer-popup.finish").show();
-        }else{
-    		//console.log(json.code);
-			//alert(json.message);
-			
-			$this.customAlert(json.message);
-
-			$("#loading").hide();
-			$('.overlay').remove();
-		}
-    });
-  }
-
-}
-
-
-export default withRouter(Register);
+  toggleCheckbox(event, target) {
+    // event.preventDefault();
+      const {isAgreementExtended, agreement1, agreement2, agreement3 } = this.state;
+     if(target == 'agreement1'){
+         this.state.agreement1 = event.target.checked;
+     }
+     if(target == 'agreement2'){
+         this.state.agreement2 = event.target.checked;
+     }    
+     if(target == 'agreement3'){
+         this.state.agreement3 = event.target.checked;
+     }
+ 
+ 
+     if(this.state.agreement1 && this.state.agreement2 && this.state.agreement3){
+         this.state.isAgreementExtended = true;
+     } else {
+         this.state.isAgreementExtended = false;
+     }
+     $('#agree01').prop('checked', this.state.isAgreementExtended);
+   }
+ 
+   getParam() {
+     const params = this.model.genQueryParams(this.props.router.asPath);
+ 
+     var domain_platform = "";
+     var mkt_source = "";
+ 
+     var path = this.props.router.asPath;
+     if(path.indexOf("?")!=-1){
+       path = path.substring(0,path.indexOf("?"));
+     }
+     var arSplitUrl   = path.split("/");
+     var nArLength     = arSplitUrl.length;
+     var domain = this.props.router.query.domain;
+     this.state.domain = domain;
+ 
+     if(domain){
+       if(domain==="zigbang")domain_platform="zb";
+       if(domain==="daum")domain_platform="da";
+       if(domain==="hogangnono")domain_platform="hg";
+     }
+ 
+     if(params.mkt_source){
+       mkt_source=params.mkt_source;
+     }
+ 
+     business=domain+"_"+bizPlatform;
+     mkt=mkt_source;
+     this.setState({ business, mkt }, () => {
+       this.params = params;
+     });
+ 
+   }
+ 
+   submitValidation(phone, agreement1, agreement2) {
+ 
+     const regExp = /^01([0|1|6|7|8|9]{1})([0-9]{3,4})([0-9]{4})$/;
+     
+     if (!phone) {
+       this.customAlert("연락처를 입력해주세요.");
+       return false;
+     }else{
+         if(!regExp.test(phone)) {
+ 
+         this.customAlert("연락처가 잘못 입력되었습니다. 다시 한 번 확인해 주세요.");
+         return false;
+         }else{
+             if (!agreement1 || !agreement2) {
+                 this.customAlert("필수 약관에 동의해 주세요.");
+                 return false;
+             }else{
+                 return true;
+             }
+         }
+     }
+   }
+ 
+   async apiSubmit(event) {
+     event.preventDefault();
+     const { domain, agreement1, agreement2, agreement3 } = this.state;
+     const $this = this;
+ 
+     var mkt_device = osName+"-"+browserName;
+     var marketing_media = "기타";
+     var marketing_source = "";
+ 
+     const params = this.model.genQueryParams(this.props.router.asPath);
+     if (params.mkt_source) {
+         marketing_source = params.mkt_source;
+     }
+ 
+     if(domain){
+       if(domain==="zigbang")marketing_media="직방";
+       if(domain==="daum")marketing_media="다음";
+       if(domain==="hogangnono")marketing_media="호갱노노";
+     }
+     
+     const phone = $('#phone').val();
+     const validation = this.submitValidation(phone, agreement1, agreement2);
+     const marketing_approvement = this.state.agreement3;
+     
+     if (!validation) return null;
+ 
+     $('body').append('<div className="overlay"></div>');
+     $("#loading").show();
+ 
+     console.log("apiSubmit(os) : "+osName); //Windows
+     console.log("apiSubmit(browser) : "+browserName); //firefox
+     console.log("apiSubmit(phone) : "+phone); //01012345678
+     console.log("apiSubmit(device) : "+mkt_device); //windows-firefox
+     console.log("apiSubmit(mkt_source) : "+marketing_source);
+     console.log("apiSubmit(media) : "+marketing_media);//직방
+     console.log("apiSubmit(user_no) : "+user_no); //user_no    
+     console.log("apiSubmit(adid) : "+adId); //adId
+     console.log("apiSubmit(mkt_approvement) : "+marketing_approvement); //marketing_approvement
+     console.log("apiSubmit(domain) : "+domain); //marketing_approvement
+ 
+     $('input').val('');
+     $('input[type="checkbox"]').prop('checked', false);
+     this.state.agreement1 = false;
+     this.state.agreement2 = false;
+     this.state.agreement3 = false;
+ 
+     fetch(apiEndPoint, {
+       method: "POST",
+       body: JSON.stringify({
+         campaign_id : 23  , //(전달받은 분양광고 ID)
+         area_danji_id: 36389, //(전달받은 단지 ID , 없을경우  0)
+         domain: domain, //(path 로 전달받은 domain , ex : ) zigbang, hogangnono, daum )
+         user_phone: phone, //(신청자 전화번호)
+         marketing_source: marketing_source || null, // (마케팅관련파라미터)
+         device_type: mkt_device, //(디바이스 타입)
+         marketing_approvement: marketing_approvement //(마케팅 수집 동의 여부)
+       }),
+       headers: {
+         "Content-type": "application/json; charset=UTF-8"
+       }
+ 
+     }).then(function(response) {
+       response.status     //=> number 100–599
+       response.statusText //=> String
+       response.headers    //=> Headers
+       response.url        //=> String
+       return response.json().then(function(json) {
+         return json;
+       });
+     }).then(function(json) {
+         console.log(json.code);
+         console.log(json.name);
+         console.log(json.message);
+         console.log(json.campaignOfferId);
+ 
+         if(json.code===undefined){
+          /*json 결과 {} 즉, 이 조건을 타면 신청 된 것임*/
+          var campaign_offer_id = json.campaignOfferId;// 신청완료 핀포인트 호출
+ 
+         // 신청 완료시 핀포인트 호출 
+         sendEvent(ZB_EVENT_TYPE.APART_PURCHASE, {
+             user_no: user_no,
+             adId: adId,
+             screen_name: "분양카달로그",
+             button_name: "응모하기",
+             ad_name: "더샵거제디클리브",
+             platform: userPlatform,
+             business: business,
+             mkt: marketing_source,
+             campaign_offer_id: campaign_offer_id
+         });
+ 
+           $("#loading").hide();
+           if(screen.width >= 769) {
+             $(".layer-popup").css("top", $(document).scrollTop() + 55);
+           } else {
+             $(".layer-popup").css("top", $(document).scrollTop());
+           }
+           $(".layer-popup.finish").show();
+         }else{			
+             $this.customAlert(json.message);
+ 
+             $("#loading").hide();
+             $('.overlay').remove();
+         }
+     });
+   }
+ 
+ }
+ 
+ 
+ export default withRouter(Register);

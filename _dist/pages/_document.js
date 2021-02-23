@@ -7,14 +7,14 @@ export default class MyDocument extends Document {
 			return (
 				<html lang="ko" itemScope="" itemType="https://schema.org/WebPage">
 				<Head>
-					<title>래미안엘리니티</title>
+					<title>더샵디클리브</title>
 					<meta charSet="utf-8"/>
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
 					<meta httpEquiv="content-type" content="text/html; charset=UTF-8"/>
 					<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, viewport-fit=cover"/>
-					<meta name="title" content="래미안엘리니티"/>
-					<meta name="keywords" content="래미안엘리니티"/>
-					<meta name="description" content="래미안엘리니티"/>
+					<meta name="title" content="더샵디클리브"/>
+					<meta name="keywords" content="더샵디클리브"/>
+					<meta name="description" content="더샵디클리브"/>
 					<meta name="author" content={"zigbang"} />
 					<link rel="shortcut icon" href=""/>
 					<link rel="apple-touch-icon" href=""/>
@@ -30,6 +30,8 @@ export default class MyDocument extends Document {
 					<script src={"../static/js/jquery-3.4.1.min.js?ts=" + time }></script>
 					<script src={"../static/js/slick.min.js?ts=" + time }></script>
 					<script src={"../static/js/player.min.js?ts=" + time }></script>
+					<script async src={'https://www.googletagmanager.com/gtag/js?id=UA-173917921-15'}></script>
+					<script async src={'https://www.googletagmanager.com/gtag/js?id=AW-822803807'}></script>
 					<NextScript />
 				</body>
 			  </html>
