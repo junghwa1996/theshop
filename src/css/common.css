@@ -52,6 +52,7 @@ input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-in
 .scroll-animate.left {transform:translate(300px, 0);}
 .scroll-animate.fade {transform:translate(0, 0);}
 .scroll-animate.animated {opacity:1; transform:translate(0, 0);}
+@keyframes motion {0% {margin-bottom: 0px;}100% {margin-bottom: 10px;}}
 .pc-only{display:none!important;}
 .m-only{display:block!important;}
 .txt-en{font-family:Lato;font-weight:300;}
@@ -258,10 +259,10 @@ footer .img-box{width:32.0833vw;height:13.3333vw;background:url(../img/sprites_2
 .layer-popup.finish{left:50%;width:95.8333vw;height:95.8333vw;padding-top:25vw;border:0;background-color:#fff;text-align:center;box-shadow:0 3.4722vw 6.9444vw .6944vw rgba(0,0,0,0.3);transform:translate(-50%,0);}
 .layer-popup.finish>span{display:block;color:#000;font-size:8.3333vw;line-height:1.4;}
 .layer-popup.finish .btn-close{top:55.5556vw;left:50%;width:22.2222vw;height:11.1111vw;background:none;background-color:#000;color:#fff;font-size:4.1667vw;line-height:11.1111vw;transform:translate(-50%,0);}
-.floating-banner{z-index:1001;opacity:0;position:fixed;bottom:4.1667vw;left:2.0833vw;width:calc(100%-4.1667vw);font-size:5vw;font-weight:700;line-height:12.5vw;text-align:left;pointer-events:none;transition:opacity .3s;display: none !important;}
+.floating-banner{z-index:1001;opacity:0;position:fixed;bottom:4.1667vw;left:0;width:calc(100% - 52.1667vw);font-size:5vw;font-weight:700;line-height:13.5vw;text-align:left;pointer-events:none;transition:opacity .3s;animation: motion 1s ease 0s infinite alternate;}
 .floating-banner.on{opacity:1;pointer-events:auto;}
-.floating-banner>a{display:block;position:relative;padding-left:4.1667vw;border-radius:2.0833vw;background-color:#30b1ac;color:#fff;letter-spacing:1px;}
-.floating-banner>a::after{content:'';position:absolute;top:calc(50%-3.6111vw);right:4.1667vw;width:6.9444vw;height:7.0833vw;background:url(../img/sprites_2nd.png) no-repeat -11.1111vw -17.5vw;background-size:43.75vw 35.5556vw;}
+.floating-banner>a{display:block;position:relative;padding-left:4.1667vw;background-color:#07193f;color:#fff;letter-spacing:1px;border-radius: 0 6.9444vw 6.9444vw 0;}
+.floating-banner>a::after{content:'';position:absolute;top:calc(50% - 3.6111vw);right:3.4667vw;width:7.9444vw;height:7.8833vw;background:url(../img/sprites_2nd.png) no-repeat -10.2111vw -17.1vw;background-size:43.75vw 35.5556vw;}
 .layer-popup.plan-expand{position:fixed;width:100%;height:100%;top:50%;left:50%;border:0;transform:translate(-50%,-50%);padding:13.8889vw 0 6.9444vw;}
 .layer-popup.plan-expand .btn-popup-close{z-index:1100;position:absolute;top:18.0556vw!important;right:2.0833vw!important;height:calc(var(--vh,1vh) * 16);width:6.3889vw;background:url(../img/sprites_2nd.png) no-repeat -20.8333vw -17.5vw;background-size:43.75vw 35.5556vw;font-size:0;}
 .layer-popup.plan-expand .slider04{width:100%;height:100%;padding-top:0;margin:0 auto;}
@@ -299,6 +300,7 @@ b,strong,.title-box h2 span{font-weight:700;}
 .section.gallery,.section.location{margin-bottom:13.8889vw;}
 .section.event .form-box input::placeholder,.section.event .form-box input::-webkit-input-placeholder,.section.event .form-box input:-ms-input-placeholder,.layer-popup.terms strong{color:#000;}
 .logo{width:30%;margin:0 auto;}
+footer .logo{margin: 0;}
 @media screen and (orientation:portrait) {
 .vr-iframe-box.rotate{width:100vh;height:100vw;transform:translateX(100vw) rotate(90deg);transform-origin:top left;}
 }
@@ -432,7 +434,7 @@ b,strong,.title-box h2 span{font-weight:700;}
 .section.event .form-box .btn-wrap{padding-top:10px;padding-bottom:30px;}
 .section.event .form-box .btn-submit{height:48px;font-size:18px;font-weight:400;line-height:48px;}
 .section.event .form-box .btn-notice{font-size:14px;line-height:24px;padding-bottom:0;margin:15px auto 0;}
-.term-check{bottom:70px;left:calc(50%-250px);width:500px;font-size:14px;}
+.term-check{bottom:70px;left:calc(50% - 250px);width:500px;font-size:14px;}
 footer{margin-top:120px;font-size:28px;padding:90px 0 60px 30px;}
 footer .btn-go-top{margin-bottom:70px;}
 footer .btn-go-top span{padding-left:72px;line-height:60px;}

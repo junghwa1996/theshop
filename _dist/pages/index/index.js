@@ -221,14 +221,14 @@ class Register extends React.Component {
                             <div className="logo scroll-animate">
                                 <img src="../static/img/logo.png" alt=""/>
                             </div>
-                            <p className="scroll-animate">더샵이 2021년 새로운 모습으로 거제에<br/>
+                            <p className="scroll-animate">2021년 더샵이 새로운 모습으로 거제에<br/>
                                 찾아옵니다. 더샵의 차별화된 익스테리어,<br/>
                                 단지의 상징이자 자랑이 될<br/>
                                 랜드마크 게이트, 세계적인 디자인 거장<br/>
                                 알레산드로 멘디니와 개발한 패턴까지<br/>
                                 <br/>
                                 주거의 本이 될 더샵의<br/>
-                                리뉴얼 3.0을 거제에서 만나보세요.
+                                리뉴얼된 3.0을 거제에서 만나보세요.
                             </p>
                         </div>
                         <div className="iframe-box scroll-animate">
@@ -249,7 +249,6 @@ class Register extends React.Component {
                                 집이 가져야할 본질적 가치, 그리고 그 안에<br/>
                                 담길 라이프스타일을 함께 고민하는<br/>
                                 포스코건설 더샵 아파트.<br/>
-                                <br/>
                                 ‘더샵다움’이란 이런 것입니다.<br/>
                             </p>
                         </div>
@@ -272,7 +271,7 @@ class Register extends React.Component {
                                 </div>
                             </div>
                             <div className="sub-text">
-                                <h3>The 고급스러운 외관</h3>
+                                <h3>THE 고급스러운 외관</h3>
                                 <p>알레산드로 멘디니의 독창적인 패턴 디자인</p>
                             </div>
                         </div>
@@ -285,7 +284,7 @@ class Register extends React.Component {
                                 </div>
                             </div>
                             <div className="sub-text">
-                                <h3>The 똑똑한 시스템</h3>
+                                <h3>THE 똑똑한 시스템</h3>
                                 <p>아파트 내외부 시스템을 제어할 수 있는 스마트 월</p>
                             </div>
                         </div>
@@ -308,7 +307,7 @@ class Register extends React.Component {
                                 </div>
                             </div>
                             <div className="sub-text">
-                                <h3>The 쾌적한 단지 내부</h3>
+                                <h3>THE 쾌적한 단지 내부</h3>
                                 <p>사계절 내내 맑은공기 가득한 자연친화적 단지</p>
                             </div>
                         </div>
@@ -319,7 +318,7 @@ class Register extends React.Component {
                             <div className="marker txt-en type1">LOCATION</div>
                             <h2 className="scroll-animate">
                                 새로운 주거타운<br/>
-                                <span>랜선 거제 탐방기</span>
+                                <span>거제 랜선탐방기</span>
                             </h2>
                             <p className="scroll-animate">
                                 거제의 중심에 위치한 더샵 거제디클리브.<br/>
@@ -377,7 +376,7 @@ class Register extends React.Component {
                                 본격 리뉴얼을 통해 업그레이드된<br/>
                                 시스템과 디자인, 더샵 거제디클리브에<br/>
                                 적용된 스마트한 기술과 교통 및 개발 호재<br/>
-                                등 전문가가 말하는 리뉴얼된 더샵의 진짜<br/>
+                                까지 전문가가 말하는 리뉴얼된 더샵의 진짜<br/>
                                 비하인드 스토리를 들어보세요.
                             </p>
                         </div>
@@ -399,36 +398,36 @@ class Register extends React.Component {
                             </li>
                             <li className="scroll-animate">
                                 <p>A.</p>
-                                <p>안전한 주거 환경(Reliable Safety),<br/>
-                                    안락한 환경(Comfort), 한층 향상된<br/>
-                                    편의 (Enhanced Convenience),<br/>
-                                    세련된 디자인 (Refine Design)<br/>
-                                    이렇게 4가지를 꼽을 수 있습니다.</p>
+                                <p>안전한 주거 환경(Reliable Safety),<br className="pc-only"/>
+                            안락한 환경(Comfort), 한층 향상된<br/>
+                            편의 (Enhanced Convenience),<br/>
+                            세련된 디자인 (Refine Design)<br/>
+                            이렇게 4가지를 꼽을 수 있습니다.</p>
                             </li>
                             <li className="scroll-animate">
                                 <p>Q.</p>
-                                <p> 더샵 거제디클리브에 접목한 AiQ에 대해<br/>
-                                    소개해주세요.</p>
+                                <p> 더샵 거제디클리브에 접목한<br className="m-only"/> AiQ에 대해<br className="pc-only"/>
+                            소개해주세요.</p>
                             </li>
                             <li className="scroll-animate">
                                 <p>A.</p>
-                                <p>앱으로 조명, 난방, 환기 제어 및 주차<br/>
-                                    위치, 택배도착, 에너지 사용량 등<br/>
-                                    정보를 확인할 수 있습니다. 안면인식<br/>
-                                    로비폰, 엘리베이터 살균조명, 공기측정<br/>
-                                    LED신호등은 기술을활용해 안전과<br/>
-                                    건강 까지 생각한 시스템이죠. </p>
+                                <p>앱으로 조명, 난방, 환기 제어 및 주차<br className="pc-only"/>
+                            위치, 택배도착, 에너지 사용량 등<br className="pc-only"/>
+                            정보를 확인할 수 있습니다.<br/>안면인식
+                            로비폰, 엘리베이터 살균조명, 공기측정
+                            LED신호등은 기술을활용해 안전과
+                            건강 까지 생각한<br className="m-only"/> 시스템이죠. </p>
                             </li>
                             <li className="scroll-animate">
                                 <p>Q.</p>
-                                <p>더샵 거제 디클리브는 어떤 아파트인가요?</p>
+                                <p>더샵 거제 디클리브는 어떤<br className="m-only"/> 아파트인가요?</p>
                             </li>
                             <li className="scroll-animate">
                                 <p>A.</p>
                                 <p>거제시 상동동에 들어서는 대단지<br/>
-                                    아파트입니다. 단지 인근이 KTX 역사<br/>
-                                    후보지에 선정되면서 점점 뜨거운<br/>
-                                    감자가 되는 중입니다. </p>
+                            아파트입니다. 단지 인근이 KTX<br className="m-only"/> 역사<br className="pc-only"/>
+                            후보지에 선정되면서 점점<br className="m-only"/> 뜨거운<br className="pc-only"/>
+                            감자가 되는 중입니다. </p>
                             </li>
                         </ul>
                     </div>
@@ -442,32 +441,31 @@ class Register extends React.Component {
                             </h2>
                         </div>
                         <div className="content">
-                            <div className="contact-img">
+                            <div className="contact-img scroll-animate">
                                 <img src="../static/img/contact-img.jpg" alt=""/>
                             </div>
                             <ul>
                                 <li className="scroll-animate">
-                                    <p>사전홍보관</p>
-                                    <p>거제시 상동동 448-1, 상가1층</p>
+                                    <p>사업지</p>
+                                    <p>거제시 상동동 765번지 외 114필지</p>
                                 </li>
                                 <li className="scroll-animate">
-                                    <p>현장</p>
-                                    <p>경상남도 거제시 상동동 756번지</p>
+                                    <p>모델하우스</p>
+                                    <p>거제시 상동동 201-1번지</p>
                                 </li>
                                 <li className="inquiry scroll-animate">
                                     <p>문의</p>
                                     <p>1661-3007</p>
-                                    <p>74㎡ /84㎡ /98㎡</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
                     <div className="section event">
-                        <div className="title-box ">
-                            <div className="marker txt-en type4">EVENT</div>
-                        </div>
                         <div className="img-box">
+                            <div className="title-box ">
+                                <div className="marker txt-en type4">EVENT</div>
+                            </div>
                             <img src="../static/img/event-bg.jpg" alt=""/>
                         </div>
                         <div className="form-box">
@@ -551,7 +549,7 @@ class Register extends React.Component {
 
                     <span className="copyright">Copyright &copy;2020 ZIGBANG All rights reserved.</span>
                     <div className="logo">
-                        <img src="../static/img/logo.png" alt=""/>
+                        <img src="../static/img/logo-footer.png" alt=""/>
                     </div>
                 </footer>
 
@@ -650,7 +648,7 @@ class Register extends React.Component {
                 </div>
 
                 <div className="floating-banner">
-                    <a href="javascript:;">INVITATION</a>
+                    <a href="javascript:;">분양 안내받기</a>
                 </div>
 
                 <div className="vr-iframe-box rotate">
