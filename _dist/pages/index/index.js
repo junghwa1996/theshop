@@ -214,14 +214,14 @@ class Register extends React.Component {
                     <div className="section emblem">
                         <div className="title-box bg-type1">
                             <div className="marker txt-en type1">RENEWAL 3.0</div>
-                            <h2>
+                            <h2 className="scroll-animate">
                                 경남에서 첫 만남<br/>
                                 <span>리뉴얼된 더샵</span>
                             </h2>
-                            <div className="logo">
+                            <div className="logo scroll-animate">
                                 <img src="../static/img/logo.png" alt=""/>
                             </div>
-                            <p>더샵이 2021년 새로운 모습으로 거제에<br/>
+                            <p className="scroll-animate">더샵이 2021년 새로운 모습으로 거제에<br/>
                                 찾아옵니다. 더샵의 차별화된 익스테리어,<br/>
                                 단지의 상징이자 자랑이 될<br/>
                                 랜드마크 게이트, 세계적인 디자인 거장<br/>
@@ -231,7 +231,7 @@ class Register extends React.Component {
                                 리뉴얼 3.0을 거제에서 만나보세요.
                             </p>
                         </div>
-                        <div className="iframe-box">
+                        <div className="iframe-box scroll-animate">
                             <img src="../static/img/video_thumb_01.jpg"/>
                             <iframe id="video02" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514160123?dnt=1&muted=1" data-idx="1"></iframe>
                             <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
@@ -241,11 +241,11 @@ class Register extends React.Component {
                     <div className="section life">
                         <div className="title-box bg-type2">
                             <div className="marker txt-en type2">THE SHARP LIFE</div>
-                            <h2>
+                            <h2 className="scroll-animate">
                                 거제에서 만나는<br/>
                                 <span>'더샵다움'</span>
                             </h2>
-                            <p>
+                            <p className="scroll-animate">
                                 집이 가져야할 본질적 가치, 그리고 그 안에<br/>
                                 담길 라이프스타일을 함께 고민하는<br/>
                                 포스코건설 더샵 아파트.<br/>
@@ -253,7 +253,7 @@ class Register extends React.Component {
                                 ‘더샵다움’이란 이런 것입니다.<br/>
                             </p>
                         </div>
-                        <div className="img-slider">
+                        <div className="img-slider scroll-animate">
                             <div className="slider slider06">
                                 <div className="slide-content">
                                     <div className="img-box">
@@ -276,7 +276,7 @@ class Register extends React.Component {
                                 <p>알레산드로 멘디니의 독창적인 패턴 디자인</p>
                             </div>
                         </div>
-                        <div className="img-slider right">
+                        <div className="img-slider right scroll-animate">
                             <div className="slider slider06">
                                 <div className="slide-content">
                                     <div className="img-box">
@@ -289,7 +289,7 @@ class Register extends React.Component {
                                 <p>아파트 내외부 시스템을 제어할 수 있는 스마트 월</p>
                             </div>
                         </div>
-                        <div className="img-slider">
+                        <div className="img-slider scroll-animate">
                             <div className="slider slider06">
                                 <div className="slide-content">
                                     <div className="img-box">
@@ -317,11 +317,11 @@ class Register extends React.Component {
                     <div className="section location">
                         <div className="title-box bg-type1">
                             <div className="marker txt-en type1">LOCATION</div>
-                            <h2>
+                            <h2 className="scroll-animate">
                                 새로운 주거타운<br/>
                                 <span>랜선 거제 탐방기</span>
                             </h2>
-                            <p>
+                            <p className="scroll-animate">
                                 거제의 중심에 위치한 더샵 거제디클리브.<br/>
                                 주변에 편의 시설과 자연 및 교육 환경을 고루<br/>
                                 갖추고 새로운 주거 중심지로 발돋움합니다.<br/>
@@ -329,7 +329,7 @@ class Register extends React.Component {
                                 교통까지 편리한 거제의 중심으로 GO GO!
                             </p>
                         </div>
-                        <div className="iframe-box">
+                        <div className="iframe-box scroll-animate">
                             <img src="../static/img/video_thumb_02.jpg"/>
                             <iframe id="video03" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514162764?dnt=1&muted=1" data-idx="2"></iframe>
                             <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
@@ -340,7 +340,7 @@ class Register extends React.Component {
                         <div className="title-box bg-type2">
                             <div className="marker txt-en type2">GALLERY</div>
                         </div>
-                        <div className="img-slider">
+                        <div className="img-slider scroll-animate">
                             <div className="slider slider01">
                                 <div className="slide-content">
                                     <div className="img-box">
@@ -369,11 +369,11 @@ class Register extends React.Component {
                     <div className="section interview">
                         <div className="title-box bg-type1">
                             <div className="marker txt-en type1">INTERVIEW</div>
-                            <h2>
+                            <h2 className="scroll-animate">
                                 전문가가 말하는 3.0 더샵<br/>
                                 <span>비하인드 스토리</span>
                             </h2>
-                            <p>
+                            <p className="scroll-animate">
                                 본격 리뉴얼을 통해 업그레이드된<br/>
                                 시스템과 디자인, 더샵 거제디클리브에<br/>
                                 적용된 스마트한 기술과 교통 및 개발 호재<br/>
@@ -381,7 +381,7 @@ class Register extends React.Component {
                                 비하인드 스토리를 들어보세요.
                             </p>
                         </div>
-                        <div className="iframe-box">
+                        <div className="iframe-box scroll-animate">
                             <img src="../static/img/video_thumb_03.jpg"/>
                             <iframe id="video04" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514166486?dnt=1&muted=1" data-idx="3"></iframe>
                             <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
@@ -393,11 +393,11 @@ class Register extends React.Component {
                             <div className="marker txt-en type3">TALK TALK</div>
                         </div>
                         <ul>
-                            <li>
+                            <li className="scroll-animate">
                                 <p>Q.</p>
                                 <p>3.0 더샵에서 리뉴얼된 부분은 무엇인가요?</p>
                             </li>
-                            <li>
+                            <li className="scroll-animate">
                                 <p>A.</p>
                                 <p>안전한 주거 환경(Reliable Safety),<br/>
                                     안락한 환경(Comfort), 한층 향상된<br/>
@@ -405,12 +405,12 @@ class Register extends React.Component {
                                     세련된 디자인 (Refine Design)<br/>
                                     이렇게 4가지를 꼽을 수 있습니다.</p>
                             </li>
-                            <li>
+                            <li className="scroll-animate">
                                 <p>Q.</p>
                                 <p> 더샵 거제디클리브에 접목한 AiQ에 대해<br/>
                                     소개해주세요.</p>
                             </li>
-                            <li>
+                            <li className="scroll-animate">
                                 <p>A.</p>
                                 <p>앱으로 조명, 난방, 환기 제어 및 주차<br/>
                                     위치, 택배도착, 에너지 사용량 등<br/>
@@ -419,11 +419,11 @@ class Register extends React.Component {
                                     LED신호등은 기술을활용해 안전과<br/>
                                     건강 까지 생각한 시스템이죠. </p>
                             </li>
-                            <li>
+                            <li className="scroll-animate">
                                 <p>Q.</p>
                                 <p>더샵 거제 디클리브는 어떤 아파트인가요?</p>
                             </li>
-                            <li>
+                            <li className="scroll-animate">
                                 <p>A.</p>
                                 <p>거제시 상동동에 들어서는 대단지<br/>
                                     아파트입니다. 단지 인근이 KTX 역사<br/>
@@ -436,7 +436,7 @@ class Register extends React.Component {
                     <div className="section contact">
                         <div className="title-box ">
                             <div className="marker txt-en type2">CONTACT</div>
-                            <h2>
+                            <h2 className="scroll-animate">
                                 리뉴얼된 3.0 더샵을<br/>
                                 <span>만나는 가장 빠른 방법</span>
                             </h2>
@@ -446,15 +446,15 @@ class Register extends React.Component {
                                 <img src="../static/img/contact-img.jpg" alt=""/>
                             </div>
                             <ul>
-                                <li>
+                                <li className="scroll-animate">
                                     <p>사전홍보관</p>
                                     <p>거제시 상동동 448-1, 상가1층</p>
                                 </li>
-                                <li>
+                                <li className="scroll-animate">
                                     <p>현장</p>
                                     <p>경상남도 거제시 상동동 756번지</p>
                                 </li>
-                                <li className="inquiry">
+                                <li className="inquiry scroll-animate">
                                     <p>문의</p>
                                     <p>1661-3007</p>
                                     <p>74㎡ /84㎡ /98㎡</p>

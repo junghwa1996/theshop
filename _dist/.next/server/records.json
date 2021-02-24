@@ -1,0 +1,27 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_app.js": 0,
+      "multi private-next-pages/_document.js": 1,
+      "multi private-next-pages/done/index.js": 2,
+      "multi private-next-pages/done/ScreenModel.js": 3,
+      "multi private-next-pages/index/index.js": 4,
+      "multi private-next-pages/index/ScreenModel.js": 5,
+      "multi next/dist/pages/_error": 6
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6
+    }
+  },
+  "chunks": {
+    "byName": {},
+    "bySource": {},
+    "usedIds": []
+  }
+}

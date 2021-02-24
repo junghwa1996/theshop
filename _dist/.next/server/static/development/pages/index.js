@@ -1182,6 +1182,7 @@ function (_React$Component) {
         },
         __self: this
       }, "RENEWAL 3.0"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("h2", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 217
@@ -1200,7 +1201,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uB9AC\uB274\uC5BC\uB41C \uB354\uC0F5")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "logo",
+        className: "logo scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 221
@@ -1215,6 +1216,7 @@ function (_React$Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 224
@@ -1263,7 +1265,7 @@ function (_React$Component) {
         },
         __self: this
       }), "\uB9AC\uB274\uC5BC 3.0\uC744 \uAC70\uC81C\uC5D0\uC11C \uB9CC\uB098\uBCF4\uC138\uC694.")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "iframe-box",
+        className: "iframe-box scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 234
@@ -1320,6 +1322,7 @@ function (_React$Component) {
         },
         __self: this
       }, "THE SHARP LIFE"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("h2", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 244
@@ -1338,6 +1341,7 @@ function (_React$Component) {
         },
         __self: this
       }, "'\uB354\uC0F5\uB2E4\uC6C0'")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 248
@@ -1374,7 +1378,7 @@ function (_React$Component) {
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "img-slider",
+        className: "img-slider scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 256
@@ -1473,7 +1477,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uC54C\uB808\uC0B0\uB4DC\uB85C \uBA58\uB514\uB2C8\uC758 \uB3C5\uCC3D\uC801\uC778 \uD328\uD134 \uB514\uC790\uC778"))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "img-slider right",
+        className: "img-slider right scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 279
@@ -1528,7 +1532,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uC544\uD30C\uD2B8 \uB0B4\uC678\uBD80 \uC2DC\uC2A4\uD15C\uC744 \uC81C\uC5B4\uD560 \uC218 \uC788\uB294 \uC2A4\uB9C8\uD2B8 \uC6D4"))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "img-slider",
+        className: "img-slider scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 292
@@ -1648,6 +1652,7 @@ function (_React$Component) {
         },
         __self: this
       }, "LOCATION"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("h2", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 320
@@ -1666,6 +1671,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uB79C\uC120 \uAC70\uC81C \uD0D0\uBC29\uAE30")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 324
@@ -1696,7 +1702,7 @@ function (_React$Component) {
         },
         __self: this
       }), "\uAD50\uD1B5\uAE4C\uC9C0 \uD3B8\uB9AC\uD55C \uAC70\uC81C\uC758 \uC911\uC2EC\uC73C\uB85C GO GO!")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "iframe-box",
+        className: "iframe-box scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 332
@@ -1753,7 +1759,7 @@ function (_React$Component) {
         },
         __self: this
       }, "GALLERY")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "img-slider",
+        className: "img-slider scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 343
@@ -1876,6 +1882,7 @@ function (_React$Component) {
         },
         __self: this
       }, "INTERVIEW"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("h2", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 372
@@ -1894,6 +1901,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uBE44\uD558\uC778\uB4DC \uC2A4\uD1A0\uB9AC")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 376
@@ -1924,7 +1932,7 @@ function (_React$Component) {
         },
         __self: this
       }), "\uBE44\uD558\uC778\uB4DC \uC2A4\uD1A0\uB9AC\uB97C \uB4E4\uC5B4\uBCF4\uC138\uC694.")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "iframe-box",
+        className: "iframe-box scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 384
@@ -1987,6 +1995,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 396
@@ -2005,6 +2014,7 @@ function (_React$Component) {
         },
         __self: this
       }, "3.0 \uB354\uC0F5\uC5D0\uC11C \uB9AC\uB274\uC5BC\uB41C \uBD80\uBD84\uC740 \uBB34\uC5C7\uC778\uAC00\uC694?")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 400
@@ -2047,6 +2057,7 @@ function (_React$Component) {
         },
         __self: this
       }), "\uC774\uB807\uAC8C 4\uAC00\uC9C0\uB97C \uAF3D\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4.")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 408
@@ -2071,6 +2082,7 @@ function (_React$Component) {
         },
         __self: this
       }), "\uC18C\uAC1C\uD574\uC8FC\uC138\uC694.")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 413
@@ -2119,6 +2131,7 @@ function (_React$Component) {
         },
         __self: this
       }), "\uAC74\uAC15 \uAE4C\uC9C0 \uC0DD\uAC01\uD55C \uC2DC\uC2A4\uD15C\uC774\uC8E0. ")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 422
@@ -2137,6 +2150,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uB354\uC0F5 \uAC70\uC81C \uB514\uD074\uB9AC\uBE0C\uB294 \uC5B4\uB5A4 \uC544\uD30C\uD2B8\uC778\uAC00\uC694?")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 426
@@ -2194,6 +2208,7 @@ function (_React$Component) {
         },
         __self: this
       }, "CONTACT"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("h2", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 439
@@ -2240,6 +2255,7 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 449
@@ -2258,6 +2274,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uAC70\uC81C\uC2DC \uC0C1\uB3D9\uB3D9 448-1, \uC0C1\uAC001\uCE35")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
+        className: "scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 453
@@ -2276,7 +2293,7 @@ function (_React$Component) {
         },
         __self: this
       }, "\uACBD\uC0C1\uB0A8\uB3C4 \uAC70\uC81C\uC2DC \uC0C1\uB3D9\uB3D9 756\uBC88\uC9C0")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("li", {
-        className: "inquiry",
+        className: "inquiry scroll-animate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 457

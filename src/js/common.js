@@ -3,7 +3,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'AW-822803807');
-gtag('config', 'UA-173917921-12');
+gtag('config', 'UA-173917921-15');
 
 function gtag_report_conversion(url) {
     var callback = function () {
@@ -12,7 +12,7 @@ function gtag_report_conversion(url) {
       }
     };
     gtag('event', 'conversion', {
-        'send_to': 'AW-822803807/Kx3_COaMk-8BEN_6q4gD',
+        'send_to': 'AW-822803807/RjhECOrv_PYBEN_6q4gD',
         'transaction_id': '',
         'event_callback': callback
     });
@@ -31,7 +31,7 @@ $(document).ready(function(){
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '768145149939813');
     fbq('track', 'PageView');
-    fbq('track', 'ec_pageview_yphalla');
+    fbq('track', 'ec_pageview_gjthesharp');
 
     var _windowHeight = $(window).outerHeight();
 
@@ -44,11 +44,11 @@ $(document).ready(function(){
             { el: $('iframe')[5], player:null },
             { el: $('iframe')[6], player:null }
         ];
-
+    var scrollAnimate = $('.scroll-animate');
     var popScrollTop = 0;
     function setPlayerKv($this) {
         $("#video01").addClass("show");        
-        $this.attr("src",'https://apis.zigbang.com/v2/vimeo/497912343?autoplay=1&loop=1&background=1');
+        $this.attr("src",'https://apis.zigbang.com/v2/vimeo/514157521?autoplay=1&loop=1&background=1');
 
         $('#video01').on('load', function(){
             setTimeout(function() {
@@ -174,6 +174,8 @@ $(document).ready(function(){
             var bannerTimeout;
             var isBanner;
             var $viewport = $('.momo-wrap .container');
+            var animateIdx = 0;
+            var animateDelay = 150;
 
             // window 스크롤 시
             $window.on("scroll", function() {
@@ -182,7 +184,16 @@ $(document).ready(function(){
                 if(isBanner) {
                     $('.floating-banner').removeClass('on');
                 }
-
+                scrollAnimate.not('.animated').each(function() {
+                    var $this = $(this);
+                    if ($this.isInAnimated()) {
+                        animateIdx++;
+                        setTimeout(function() {
+                            $this.addClass('animated');
+                        }, animateDelay * animateIdx);
+                    }
+                });
+                animateIdx = 0;
                 // 20200309
                 iframePlayer.forEach(function(item) {
                     if (item.player && !$(item.el).isInViewport($viewport)) {
@@ -411,7 +422,10 @@ $(document).ready(function(){
     });
 
     $('.btn-submit').on('click', function() {
-		fbq('track', 'ec_submit_ramianelinity');
+      fbq('track', 'ec_submit_gjthesharp');
+
+      gtag('event', 'click', { event_category: 'invitation' });
+      gtag_report_conversion();
     });
 
     $('.iframe-box').on('click', '.btn-sound', function() {
@@ -462,4 +476,12 @@ $.fn.isInViewport = function(box, detail) {
     var viewportBottom = viewportTop + $(window).height();
 
     return detail ? (elementBottom > viewportTop && elementTop < viewportBottom && elementLeft >= boxLeft - 20 && elementRight <= boxRight) : (elementTop >= viewportTop && elementBottom < viewportBottom && elementLeft >= boxLeft - 20 && elementRight <= boxRight);
+};
+$.fn.isInAnimated = function() {
+    var viewportTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportBottom = viewportTop + $(window).height() * 0.9;
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
 };
