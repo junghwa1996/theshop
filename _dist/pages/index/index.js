@@ -329,7 +329,6 @@ class Register extends React.Component {
                             </p>
                         </div>
                         <div className="iframe-box scroll-animate">
-                            <img src="../static/img/video_thumb_02.jpg"/>
                             <iframe id="video03" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514162764?dnt=1&muted=1" data-idx="2"></iframe>
                             <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
                         </div>
@@ -381,7 +380,6 @@ class Register extends React.Component {
                             </p>
                         </div>
                         <div className="iframe-box scroll-animate">
-                            <img src="../static/img/video_thumb_03.jpg"/>
                             <iframe id="video04" frameBorder="0" allow="fullscreen; autoplay" allowFullScreen data-src="https://apis.zigbang.com/v2/vimeo/514166486?dnt=1&muted=1" data-idx="3"></iframe>
                             <button type="button" className="btn-sound" data-idx="0" data-muted="true"></button>
                         </div>
@@ -411,12 +409,10 @@ class Register extends React.Component {
                             </li>
                             <li className="scroll-animate">
                                 <p>A.</p>
-                                <p>앱으로 조명, 난방, 환기 제어 및 주차<br className="pc-only"/>
-                            위치, 택배도착, 에너지 사용량 등<br className="pc-only"/>
-                            정보를 확인할 수 있습니다.<br/>안면인식
-                            로비폰, 엘리베이터 살균조명, 공기측정
-                            LED신호등은 기술을활용해 안전과
-                            건강 까지 생각한<br className="m-only"/> 시스템이죠. </p>
+                                <p>앱으로 조명, 난방, 환기제어 및 주차와 택배,
+                            에너지 사용량 등의 정보를 확인할 수 있는 시스템입니다.<br/>
+                            안면인식 로비폰, 엘리베이터 살균조명, 공기측정 LED 신호등은
+                            기술을 활용해 안전과 건강까지 생각한 시스템이죠.</p>
                             </li>
                             <li className="scroll-animate">
                                 <p>Q.</p>
@@ -466,7 +462,45 @@ class Register extends React.Component {
                             <div className="title-box ">
                                 <div className="marker txt-en type4">EVENT</div>
                             </div>
-                            <img src="../static/img/event-bg.jpg" alt=""/>
+                            <div className="sec-01">
+                                <h3>
+                                    <p>
+                                        <span className="blind">더샵 거제디클리브 관심고객을 위한 특별한 혜택</span>
+                                    </p>
+                                </h3>
+                                <div className="event-sub-txt">
+                                    <p>분양 안내받기</p>
+                                    <p>하신 분들에게 선물을 드려요</p>
+                                </div>
+                            </div>
+                            <div className="text-list sec-02">
+                                <ul>
+                                    <li>
+                                        <p>청약자<br/>추첨이벤트</p>
+                                        <p>신세계상품권 총 100만원</p>
+                                    </li>
+                                    <li>
+                                        <ol className="event-list">
+                                            <li>10만원권 상품권 10명</li>
+                                            <li>대상: 분양 안내받기 고객 자동 접수</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="text-list sec-03">
+                                <ul>
+                                    <li>
+                                        <p>청약/계약<br/>이벤트</p>
+                                        <ol className="event-list">
+                                            <li>청약인증: 스타벅스 기프티콘 2매</li>
+                                            <li>계약인증: 신세계상품권 10만원</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <img src="../static/img/event-gift.png" alt=""/>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="form-box">
                             <form onSubmit={this.apiSubmit.bind(this)}>
@@ -609,7 +643,7 @@ class Register extends React.Component {
                         
                         <dl>
                             <dt>개인정보 제공받는 자</dt>
-                            <dd>삼성물산㈜, ㈜엠비앤홀딩스</dd>
+                            <dd>(주)포스코건설, 위더스드림(주), (주)애드매드</dd>
                             <dt>제공 정보</dt>
                             <dd>휴대폰 번호</dd>
                             <dt>목적</dt>

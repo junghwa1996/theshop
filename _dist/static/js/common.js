@@ -429,13 +429,13 @@ $(document).ready(function(){
     });
 
     $('.iframe-box').on('click', '.btn-sound', function() {
-        var $this = $(this);
-        var idx = $this.data('idx');
-        var muted = $this.data('muted');
-
-        iframePlayer[idx].player.setMuted(!muted);
-        $this.data('muted', !muted);
-        $this.toggleClass('on');
+        var $this = $(this), id = $this.siblings("iframe").attr("id"), muted = $this.data("muted"), _this;
+        iframePlayer.find((function(item) {
+            return item.el.id === id
+        }
+        )).player.setMuted(!muted),
+        $this.data("muted", !muted),
+        $this.toggleClass("on")
     });
     
     setPlayerKv($("#video01"));
